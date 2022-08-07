@@ -9,4 +9,4 @@ RUN npm run build
 
 # Run 
 FROM nginx:1.22-alpine
-COPY --from=build /var/lib/jenkins/worspace/frontend_build_test/dist/youtube-clone-ui /usr/share/nginx/html
+COPY --from=build /var/lib/jenkins/workspace/frontend_build_test/dist/youtube-clone-ui /usr/share/nginx/html
