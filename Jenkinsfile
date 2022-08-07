@@ -9,7 +9,7 @@ pipeline {
   stages {
       stage('Cloning front-end Git') {
             steps { 
-                git 'https://github.com/Goorm-4-Youtube/testFront.git'  //GitClone
+		checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Goorm-4-Youtube/testFront.git']]]
             }
         } 
       stage('Build an image') { 
