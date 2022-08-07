@@ -4,11 +4,8 @@
 .git
 .gitignore
 
-# ignore all logs related to build process
-target/
-target/*
-##target/*.jar
-.pom.xml
+# ignore all files except dist folder
+!dist/
 
 # ignore all *.log files in all folders
 **.*.log
