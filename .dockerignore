@@ -1,0 +1,14 @@
+# .aws 와 .git 그리고 .cache 폴더를 무시
+.aws
+.cache
+.git
+.gitignore
+
+# ignore all logs related to build process
+target/
+target/*
+##target/*.jar
+.pom.xml
+
+# ignore all *.log files in all folders
+**.*.log
