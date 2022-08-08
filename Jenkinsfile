@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-      repository = "shk230/goorm-myweb"  // repository name of your docker hub 
+      repository = "seonwoohongmin/jenkins-dockerhub"  // repository name of your docker hub 
       DOCKERHUB_CREDENTIALS = credentials('dockerhub') // jenkins에 등록해 놓은 docker hub credentials 이름
       dockerImage = ' ' 
   }
